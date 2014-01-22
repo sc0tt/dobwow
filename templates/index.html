@@ -7,7 +7,9 @@
    <style>
      body {
       font-family: 'Nunito', sans-serif;
-      background: #201D38;
+      background: url({{ url_for('static', filename='img/equal.gif') }}) bottom left #201D38 repeat-x;
+      background-attachment: fixed; 
+      background-size:233px 93px;
       color: #B6B6B6;
       text-align:center;
      }
@@ -34,5 +36,8 @@
 </head>
 <body>
 <div id="dobwow">dobwow</div>
+<audio controls autoplay loop>
+  <source src="{{ url_for('static', filename='ogg/dubwow.ogg') }}" type="audio/ogg">
+</audio>
 </body>
 </html>
