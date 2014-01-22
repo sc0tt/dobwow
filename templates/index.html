@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>dobwow</title>
+   <link href='http://fonts.googleapis.com/css?family=Nunito:700' rel='stylesheet' type='text/css'>
+   <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+   <style>
+     body {
+      font-family: 'Nunito', sans-serif;
+      background: #201D38;
+      color: #B6B6B6;
+      text-align:center;
+     }
+     #dobwow {
+      height:150px;
+      width:1000px;
+      text-align:center;
+      font-size:150px;
+      line-height:150px;
+      position:absolute;
+      top:50%;
+      left:50%;
+      margin-top:-75px;
+      margin-left:-500px;
+
+     }
+   </style>
+   <script type="text/javascript" src="{{ url_for('static', filename='js/rainbow.js') }}"></script>
+   <script type="text/javascript">
+     $(function() {
+      $('#dobwow').rainbow({animate:true,animateInterval:100,colors:['#FF0000','#f26522','#fff200','#00a651','#28abe2','#2e3192','#6868ff']});
+     })
+   </script>
+</head>
+<body>
+<div id="dobwow">dobwow</div>
+</body>
+</html>
