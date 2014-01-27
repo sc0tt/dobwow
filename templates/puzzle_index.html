@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block body %}
+        <p>Welcome to the puzzle hunt! </p>
+        <h3>About</h3>
+        <p>The puzzle hunt involves a series of small puzzles. Completing all of the puzzles will earn you some free dogecoin.</p>
+        <p>The answers to the puzzles are case-insensitive and will only be characters a-z and 0-9</p>
+        <p>Hints may show up for various puzzles</p>
+        <p>To claim your prize you must message <strong>sc0tt</strong> on the IRC with a link to the final page saying you found it.</p>
+        <h3>Play</h3>
+        <p>Click the button below to start!</p>
+        <a href="{{ url_for('puzzle', level='start') }}" class="btn btn-success col-md-2">Start</a>
+{% endblock %}
